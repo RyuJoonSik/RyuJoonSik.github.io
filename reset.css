@@ -82,7 +82,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  color: #31344b;
+  color: #2c466d;
   font-size: 100%;
   vertical-align: baseline;
   font-family: "Gothic A1", sans-serif;
@@ -101,11 +101,14 @@ nav,
 section {
   display: block;
 }
+html {
+  height: 100%;
+}
 body {
-  height: 100vh;
-  padding: 5rem;
   box-sizing: border-box;
-  background-color: #e0e5ec;
+  height: 100%;
+  padding: 4rem;
+  background-color: rgb(222, 234, 246);
   line-height: 1;
 }
 ol,
@@ -134,4 +137,7 @@ button {
   font-size: 1rem;
   font-family: "Gothic A1", sans-serif;
   cursor: pointer;
+}
+h3 {
+  font-size: 1.5rem;
 }

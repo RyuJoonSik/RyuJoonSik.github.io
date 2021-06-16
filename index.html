@@ -19,48 +19,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrap">
-      <header class="header">
-        <ul class="header__list">
-          <li class="header__item">
-            <button class="header__btn">Info</button>
-          </li>
-          <li class="header__item">
-            <button class="header__btn">Project</button>
-          </li>
-          <li class="header__item">
-            <button class="header__btn">Education</button>
-          </li>
-        </ul>
-      </header>
-      <section class="main">
-        <article class="content">
-          <div class="content__wrap">
-            <article class="info">
-              <figure class="info__profile">
-                <div class="info__wrap-profile">
-                  <img
-                    src="./profile.png"
-                    alt="인물사진입니다."
-                    class="info__photo"
-                  />
-                </div>
-                <figcaption class="info__intro">
-                  안녕하세요 프론트 엔드 개발자 류준식입니다.
-                </figcaption>
-              </figure>
-              <ul class="info_list">
-                <li class="info_item"></li>
-                <li class="info_item"></li>
-                <li class="info_item"></li>
-              </ul>
-            </article>
-            <article class="intro"></article>
-          </div>
-        </article>
-        <!-- <article class="content project"></article> -->
-        <!-- <article class="content education"></article> -->
-      </section>
-    </div>
+    <section class="main">
+      <article class="profile">
+        <figure class="photo">
+          <img src="profile.png" alt="프로필 사진 입니다." class="photo__img" />
+        </figure>
+        <section class="info">
+          <article class="content">
+            <h3 class="content__title">Intro</h3>
+            <div class="content__wrap">
+              <p class="content__intro">
+                안녕하세요. 프론트 엔드 개발자 류준식입니다.
+              </p>
+            </div>
+          </article>
+          <article class="content">
+            <h3 class="content__title">Skills</h3>
+            <div class="content__wrap"></div>
+          </article>
+          <article class="content">
+            <h3 class="content__title">Certificates</h3>
+            <div class="content__wrap"></div>
+          </article>
+          <article class="content">
+            <h3 class="content__title">Contact</h3>
+            <div class="content__wrap"></div>
+          </article>
+        </section>
+      </article>
+      <div class="main__seperation"></div>
+      <article class="description"></article>
+    </section>
+    <script src="app.js
+    "></script>
   </body>
 </html>
