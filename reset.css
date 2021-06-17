@@ -107,7 +107,7 @@ html {
 body {
   box-sizing: border-box;
   height: 100%;
-  padding: 4rem;
+  padding: 3rem;
   background-color: rgb(222, 234, 246);
   line-height: 1;
 }
@@ -138,6 +138,11 @@ button {
   font-family: "Gothic A1", sans-serif;
   cursor: pointer;
 }
+h2 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px #bbb;
+}
 h3 {
   font-size: 1.5rem;
+  text-shadow: 1px 1px 1px #bbb;
 }

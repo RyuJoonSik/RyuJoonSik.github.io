@@ -34,13 +34,17 @@
   content: "";
 }
 
-.profile {
+.profile,
+.portfolio,
+.education {
   position: relative;
   float: left;
   box-sizing: border-box;
-  width: 375px;
   height: 100%;
   /* margin-bottom: 10%; */
+}
+.profile {
+  width: 365px;
 }
 .photo {
   box-sizing: border-box;
@@ -61,26 +65,80 @@
 .info {
   height: calc(100% - 260px - 2rem);
 }
-.content {
+.content-info {
   box-sizing: border-box;
   height: calc((100% - 3rem) / 4);
+  padding: 1.3rem;
   border-radius: 1rem;
   box-shadow: rgb(190, 203, 216) 7px 7px 14px 0px inset,
     rgb(243, 249, 255) -7px -7px 14px 0px inset;
 }
-.content + .content {
+.content-info + .content-info {
   margin-top: 1rem;
 }
-.content__title {
+.content-info__title {
+  margin-bottom: 0.5rem;
+  color: #0172ff;
+}
+.content-info__wrap {
+  height: calc(100% - 32px);
+}
+.content-info__intro,
+.content-info__item,
+.content-info__email {
+  height: 100%;
+  /* font-size: 1.2rem; */
   text-shadow: 1px 1px 1px #bbb;
+  line-height: 35.66px;
+}
+.content-info__intro,
+.content-info__email {
+  text-indent: 1rem;
+}
+.content-info__list {
+  height: 100%;
+}
+.content-info__list::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.content-info__item {
+  float: left;
+  /* width: 20%; */
+  margin-left: 1rem;
+  padding: 0 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 1rem;
+  box-shadow: rgb(190, 203, 216) 4px 4px 8px 0px,
+    rgb(243, 249, 255) -4px -4px 8px 0px;
+}
+.content-info__email {
+  font-style: normal;
+}
+.portfolio,
+.education {
+  width: calc((100% - 20% - 365px) / 2);
+}
+.portfolio__title,
+.education__title {
   margin-bottom: 1rem;
 }
-.content__wrap {
-  height: calc(100% - 40px);
+.portfolio__title {
+  color: #ff00a5;
 }
-.content__intro {
-  height: 100%;
-  line-height: 100%;
+.content-portfolio {
+  height: calc((100% - 1rem - 48px) / 2);
+  border-radius: 1rem;
+  box-shadow: rgb(190, 203, 216) 7px 7px 14px 0px inset,
+    rgb(243, 249, 255) -7px -7px 14px 0px inset;
+}
+.content-portfolio + .content-portfolio {
+  margin-top: 1rem;
+}
+.education__title {
+  color: #ffe000;
 }
 @media screen and (orientation: portrait) {
   body {
