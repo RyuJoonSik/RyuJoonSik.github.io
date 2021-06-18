@@ -107,7 +107,6 @@ html {
 body {
   box-sizing: border-box;
   height: 100%;
-  padding: 3rem;
   background-color: rgb(222, 234, 246);
   line-height: 1;
 }

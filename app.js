@@ -2,7 +2,12 @@
 // var PHOTO_LENGTH = Math.min(PHOTO.offsetWidth, PHOTO.offsetHeight);
 // PHOTO.style.width = PHOTO_LENGTH + "px";
 // PHOTO.style.height = PHOTO_LENGTH + "px";
-const BODY = document.getElementsByTagName("body")[0];
+var _body = document.getElementsByTagName("body")[0];
+var _contentInfoWrap = document.getElementsByClassName("content-info__wrap");
+var _contentInfoWrapHeight = _contentInfoWrap[0].offsetHeight + "px";
+var _contentInfoWrapLength = _contentInfoWrap.length;
+var El, i;
 
-BODY.style.width = window.innerWidth;
-BODY.style.height = window.innerHeight;
+for (i = 0; i < _contentInfoWrapLength; i += 1) {
+  _contentInfoWrap[i].style.lineHeight = _contentInfoWrapHeight;
+}

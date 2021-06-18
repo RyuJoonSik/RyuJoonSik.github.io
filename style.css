@@ -3,24 +3,12 @@
   height: 100%;
   box-sizing: border-box;
   padding: 3rem;
-  border-radius: 1rem;
-  box-shadow: rgb(190, 203, 216) 7px 7px 14px 0px,
-    rgb(243, 249, 255) -7px -7px 14px 0px;
-}
-.main::before {
-  position: absolute;
-  right: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  border-radius: inherit;
   box-shadow: rgb(190, 203, 216) 7px 7px 14px 0px inset,
     rgb(243, 249, 255) -7px -7px 14px 0px inset;
-  content: "";
 }
 .main__seperation {
   float: left;
-  width: 10%;
+  width: 5%;
   height: 100%;
 }
 .main__seperation::after {
@@ -87,9 +75,8 @@
 .content-info__item,
 .content-info__email {
   height: 100%;
-  /* font-size: 1.2rem; */
+  font-size: 1.2rem;
   text-shadow: 1px 1px 1px #bbb;
-  line-height: 35.66px;
 }
 .content-info__intro,
 .content-info__email {
@@ -105,7 +92,7 @@
 }
 .content-info__item {
   float: left;
-  /* width: 20%; */
+  width: 20%;
   margin-left: 1rem;
   padding: 0 0.5rem;
   text-align: center;
@@ -114,12 +101,16 @@
   box-shadow: rgb(190, 203, 216) 4px 4px 8px 0px,
     rgb(243, 249, 255) -4px -4px 8px 0px;
 }
+.content-info__item--certificate {
+  width: auto;
+  font-size: 1rem;
+}
 .content-info__email {
   font-style: normal;
 }
 .portfolio,
 .education {
-  width: calc((100% - 20% - 365px) / 2);
+  width: calc((100% - 10% - 365px) / 2);
 }
 .portfolio__title,
 .education__title {
@@ -130,12 +121,25 @@
 }
 .content-portfolio {
   height: calc((100% - 1rem - 48px) / 2);
+  padding: 2rem;
+  box-sizing: border-box;
   border-radius: 1rem;
   box-shadow: rgb(190, 203, 216) 7px 7px 14px 0px inset,
     rgb(243, 249, 255) -7px -7px 14px 0px inset;
 }
 .content-portfolio + .content-portfolio {
   margin-top: 1rem;
+}
+.portfolio__link {
+  display: block;
+  height: 100%;
+}
+.portfolio__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgb(190, 203, 216) 7px 7px 14px 0px,
+    rgb(243, 249, 255) -7px -7px 14px 0px;
 }
 .education__title {
   color: #ffe000;
