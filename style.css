@@ -6,7 +6,90 @@ body {
   height: 100%;
 }
 
-.intro {
+.screen {
+  position: relative;
   height: 100%;
+}
+
+.screen--1 {
   background-color: #eee;
+}
+
+.btn-top {
+  /* display: none; */
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #ddd;
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.btn-top:hover {
+  opacity: 0.6;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.intro__title-sub {
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+.intro__title {
+  padding: 2rem 4rem;
+  border: solid #000;
+  border-width: 1px 0;
+}
+
+.intro__title-sub + .intro__title-sub {
+  margin-top: 2rem;
+}
+
+.nav {
+  /* margin-top: 1rem; */
+}
+
+.nav__list {
+}
+
+.nav__list::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.nav__item {
+  float: left;
+  width: 33.33%;
+}
+
+.nav__link {
+  display: inline-block;
+  position: relative;
+  padding: 1rem;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav__link:hover {
+  color: #999;
+}
+
+.screen--2 {
+  background-color: #fff;
 }
