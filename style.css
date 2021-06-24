@@ -6,12 +6,9 @@ body {
   height: 100%;
 }
 
-.screen {
+.first-page {
   position: relative;
   height: 100%;
-}
-
-.screen--1 {
   background-color: #eee;
 }
 
@@ -90,6 +87,89 @@ body {
   color: #999;
 }
 
-.screen--2 {
-  background-color: #fff;
+.about-me,
+.portfolio,
+.education {
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.about-me__title,
+.portfolio__title,
+.education__title {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000;
+  font-size: 3rem;
+}
+
+.about-me__content,
+.portfolio__content,
+.education__content {
+  padding: 1rem;
+}
+
+.introduction,
+.info__wrap {
+  margin-bottom: 1rem;
+}
+
+.introduction__content,
+.info__word,
+.info__desc {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.info__wrap {
+  /* position: relative; */
+  /* width: 50%; */
+  /* text-align: right; */
+}
+
+.info__wrap::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.info__word,
+.info__desc,
+.roulette__desc,
+.dashboard__desc {
+  /* display: inline-block; */
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.info__word {
+  font-size: 24px;
+  /* position: absolute; */
+  /* left: 0; */
+}
+
+.info__desc {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.roulette {
+  margin-bottom: 2rem;
+}
+
+.roulette__title,
+.dashboard__title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.roulette__desc,
+.dashboard__desc {
+  padding-left: 1rem;
+}
+
+.roulette__desc::before,
+.dashboard__desc::before {
+  content: "· ";
 }
